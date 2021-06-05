@@ -32,46 +32,90 @@
             </section>
 
             <section class="signup-container">
-                <h2 class="signup-promo"><b>Try it free 7 days</b> then $20/mo. thereafter</h2>
-                <form action="/" class="signup-form">
-                    <input
-                        type="text"
-                        placeholder="First Name"
-                        class="signup-form__input-control"
-                        id="first-name"
-                    />
-                    <img src="images/icon-error.svg" alt="Error Icon">
-                    <div class="error-msg">First Name cannot be empty</div>
-                    <input
-                        type="text"
-                        placeholder="Last Name"
-                        class="signup-form__input-control"
-                        id="last-name"
-                    />
-                    <img src="images/icon-error.svg" alt="Error Icon">
-                    <div class="error-msg">Last Name cannot be empty</div>
-                    <input
-                        type="email"
-                        placeholder="Email Address"
-                        class="signup-form__input-control"
-                        id="email"
-                    />
-                    <img src="images/icon-error.svg" alt="Error Icon">
-                    <div class="error-msg">Looks like this is not an email</div>
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        class="signup-form__input-control"
-                        id="password"
-                    />
-                    <img src="images/icon-error.svg" alt="Error Icon">
-                    <div class="error-msg">Password cannot be empty</div>
-                    <button type="submit"" class="signup-form__btn">Claim Your Free Trial</button>
-                </form>
-                <p>
-                    By clicking the button, you are agreeing to our
-                    <a href="/">Terms and Services</a>
-                </p>
+                <h2 class="signup-promo">
+                    <b>Try it free 7 days</b> then $20/mo. thereafter
+                </h2>
+
+                <div class="form-container">
+                    <form action="/" class="signup-form">
+                        <div class="signup-form-control">
+                            <input
+                                type="text"
+                                placeholder="First Name"
+                                class="signup-form__input-control"
+                                id="first-name"
+                            />
+                            <img
+                                src="images/icon-error.svg"
+                                alt="Error Icon"
+                                class="error-icon"
+                            />
+                            <div class="error-msg">
+                                First Name cannot be empty
+                            </div>
+                        </div>
+
+                        <div class="signup-form-control">
+                            <input
+                                type="text"
+                                placeholder="Last Name"
+                                class="signup-form__input-control"
+                                id="last-name"
+                            />
+                            <img
+                                src="images/icon-error.svg"
+                                alt="Error Icon"
+                                class="error-icon"
+                            />
+                            <div class="error-msg">
+                                Last Name cannot be empty
+                            </div>
+                        </div>
+
+                        <div class="signup-form-control">
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                class="signup-form__input-control"
+                                id="email"
+                            />
+                            <img
+                                src="images/icon-error.svg"
+                                alt="Error Icon"
+                                class="error-icon"
+                            />
+                            <div class="error-msg">
+                                Looks like this is not an email
+                            </div>
+                        </div>
+
+                        <div class="signup-form-control">
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                class="signup-form__input-control"
+                                id="password"
+                            />
+                            <img
+                                src="images/icon-error.svg"
+                                alt="Error Icon"
+                                class="error-icon"
+                            />
+                            <div class="error-msg">
+                                Password cannot be empty
+                            </div>
+                        </div>
+
+                        <button class="signup-form-btn">
+                            Claim Your Free Trial
+                        </button>
+                    </form>
+
+                    <p class="tas">
+                        By clicking the button, you are agreeing to our
+                        <a href="/" class="tas-link">Terms and Services</a>
+                    </p>
+                </div>
             </section>
         </main>
 
