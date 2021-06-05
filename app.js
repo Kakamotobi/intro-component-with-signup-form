@@ -61,3 +61,35 @@ function checkInputs() {
         allInputsArr.forEach((el) => (el.value = ""));
     }
 }
+
+// Function for setting the error class and error message
+function setErrorFor(input, message) {
+    const errorIcon = input.parentElement.querySelector(".error-icon");
+    const errorMsg = input.parentElement.querySelector(".error-msg");
+
+    // add error class to input
+    input.classList.remove("show-input-success");
+    input.classList.add("show-input-error");
+
+    // display error icon
+    errorIcon.classList.add("show-error-icon");
+
+    // display error msg
+    errorMsg.innerText = message;
+}
+
+// Function for setting the success class
+function setSuccessFor(input) {
+    const errorIcon = input.parentElement.querySelector(".error-icon");
+    const errorMsg = input.parentElement.querySelector(".error-msg");
+
+    // add success class to input
+    input.classList.remove("show-input-error");
+    input.classList.add("show-input-success");
+
+    // remove error icon
+    errorIcon.classList.remove("show-error-icon");
+
+    // remove error msg
+    errorMsg.innerText = "";
+}
