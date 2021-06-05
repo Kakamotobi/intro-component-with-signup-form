@@ -100,21 +100,23 @@ h1 {
 .show-input-error {
     border: 2px solid var(--red);
 }
+.show-input-success {
+    border: 2px solid var(--green);
+}
 .error-icon {
     position: absolute;
     right: 20px;
     top: 15px;
     display: none;
 }
+.show-error-icon {
+    display: block;
+}
 .error-msg {
     text-align: right;
     color: var(--red);
     font-size: 0.8rem;
     font-style: italic;
-    display: none;
-}
-.show-error {
-    display: block;
 }
 .signup-form-btn {
     width: 100%;
