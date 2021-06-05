@@ -93,3 +93,19 @@ function setSuccessFor(input) {
     // remove error msg
     errorMsg.innerText = "";
 }
+
+// Email Validity Check
+function isValidEmail(emailValue) {
+    return /^([A-Za-z0-9_-]+\.)*[A-Za-z0-9_-]+\@([A-Za-z0-9_-]+\.)+[A-Za-z]{2,4}$/.test(
+        emailValue
+    );
+}
+
+// Password Validity Check
+// At least one lowercase letter, one uppercase letter, one number, one special character.
+// Password length: 8 - 15
+function isValidPassword(passwordValue) {
+    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(
+        passwordValue
+    );
+}
