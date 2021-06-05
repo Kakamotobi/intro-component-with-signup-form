@@ -12,12 +12,115 @@
     font-size: 16px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Footer */
+body {
+    min-height: 100vh;
+    padding: 90px 23px 0 23px;
+    background: url(images/bg-intro-mobile.png);
+    background-color: var(--red);
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper {
+    margin-bottom: 68px;
+}
+.title {
+    margin-bottom: 66px;
+}
+h1 {
+    margin: 0 46px 23px;
+    font-size: 1.75rem;
+    line-height: 1.35;
+}
+
+.signup-promo {
+    padding: 20px 76px;
+    margin-bottom: 24px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 6px hsla(249, 10%, 26%, 0.26);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.signup-promo > b {
+    font-weight: 600;
+}
+
+.form-container {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.signup-form {
+    margin-bottom: 13px;
+}
+.signup-form-control {
+    position: relative;
+    padding-bottom: 16px;
+}
+.signup-form__input-control {
+    width: 100%;
+    height: 55px;
+    padding: 18px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.show-input-error {
+    border: 2px solid var(--red);
+}
+.error-icon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+.error-msg {
+    text-align: right;
+    color: var(--red);
+    font-size: 0.8rem;
+    font-style: italic;
+    display: none;
+}
+.show-error {
+    display: block;
+}
+.signup-form-btn {
+    width: 100%;
+    height: 56px;
+    padding: 16px 40px;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    box-shadow: 0 4px hsl(154, 58%, 46%);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tas {
+    margin: 0 20px;
+    color: var(--greyBlue);
+    font-size: 0.7rem;
+    line-height: 2;
+}
+.tas-link {
+    text-decoration: none;
+    color: var(--red);
+    font-weight: 700;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
